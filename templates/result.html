@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Result</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Bootstrap background color */
+        }
+
+        .result-container {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .result-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .result-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .result-sentiment {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff; /* Bootstrap primary color */
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <div class="result-heading">
+            <h1>Sentiment Analysis Result</h1>
+        </div>
+        <div class="result-text">
+            <p>Input Text: {{ text }}</p>
+            <p class="result-sentiment">Sentiment: {{ sentiment }}</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN (place at the end of the body for faster page loading) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
